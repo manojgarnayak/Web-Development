@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Properties</title>
+    <style>
+        *{
+            padding: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #212121;
+            color: aliceblue;
+        }
+        div{
+            border: 3px solid white;
+            width: 200px;
+            height: 200px;
+            margin: 25px;
+            padding: 50px;
+        }
+        .div1{
+            background-color: red;
+        }
+        .div2{
+            background-color: blue;
+        }
+
+        /* To add custom styling to inline elements then we have to use display: inline-block */
+        span{
+            border: 3px solid green;
+            height: 100px;
+            width: 300px;
+            margin: 10px;
+            padding: 15px;
+            display: inline-block;
+        }
+        #span1{
+            background-color: red;
+        }
+        #span2{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Display Properties</h1>
+
+    <div class="div1">Div 1</div>
+    <div class="div2">Div 2</div>
+
+    <span id="span1">This is span tag 1</span>
+    <span id="span2">This is span tag 2</span>
+
+</body>
+</html>
