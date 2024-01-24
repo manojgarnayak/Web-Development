@@ -1,0 +1,17 @@
+p{
+    color: red;
+}
+
+#article{
+    background-color: #212121;
+    color: aliceblue;
+}
+
+.paragraph{
+    background-color: blue;
+    color: bisque;
+}
+
+p, article{
+    width: 500px;
+}
