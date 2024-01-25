@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            background-color: beige;
+            display: flex;
+            width: 800px;
+            padding: 10px;
+        }
+        #box1{
+            background-color: red;
+            border: 1px solid black;
+            width: 50%;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        #box2{
+            background-color: yellow;
+            border: 1px solid blue;
+            border: 50%;
+        }
+        p{
+            border: 1px solid black;
+        }
+        img{
+            width: 170px;
+        }
+        @media (max-width: 640px){
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box1">
+            <p>text1</p>
+            <p>text2</p>
+        </div>
+        <div id="box2">
+            <img src="https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?auto=compress&cs=tinysrgb&w=400" alt="">
+        </div>
+    </div>
+</body>
+</html>
