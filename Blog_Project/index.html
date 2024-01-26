@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* background-color: #3d4e55;  */
+            /* background-image: linear-gradient(19deg, #3d4e55 0%, #341c3e 50%, #000000 100%);
+            color: white; */
+            font-family: 'Grape Nuts', cursive;
+        }
+        body{
+            height: 100%;
+            width: 100%;
+        }
+        .container{
+            max-width: 75vw;
+            padding: 2rem 1rem;
+            margin: 0 auto;
+            /* background-color: #0093E9;
+            background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); */
+        } 
+        a{
+            text-decoration: none;
+        }
+        .header-container{
+            margin-bottom: 2.8rem;
+        }
+        .header-title{
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            line-height: 2rem;
+            font-weight: 800;
+            text-align: center;
+        }
+        .header-desc{
+            max-width: 568px;
+            text-align: center;
+            margin: 0 auto;
+            font-weight: 400;
+        }
+        .main-container{
+            display: grid;
+            /* grid-template-rows: repeat; */
+            gap: 1.5rem;
+            grid-template-columns: repeat(4, 1fr);
+        }
+        .card-container{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgb(101, 100, 100);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .card-container:hover{
+            transform: scale(1.1);
+            transition-duration: 200ms;
+        }
+        .card-img-container{
+            position: relative;
+            overflow: hidden;
+            height: 14rem;
+        }
+        .card-image{
+            object-fit: cover;
+            object-position: center;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }.card-title-container{
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem;
+        }
+        .card-title{
+            font-size:1rem;
+            font-weight: 600;
+            color: black;
+            line-height: 1.5rem;
+            margin-bottom: 0.2rem;
+        }
+        .card-title-anchor:hover .card-title{
+            color: blue;
+        }
+        .card-desc{
+            color: grey;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        .card-footer-container{
+            display: flex;
+            justify-content: space-between;
+            justify-content: flex-end;
+            padding: 1.5rem;
+        }
+        .author-container{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .author-avatar-container{
+            height: 2.5rem;
+            width: 2.5rem;
+            overflow: hidden;
+            border: 1px solid rgb(172, 150, 150);
+            border-radius: 50%;
+            background-color: rgb(228, 226, 226);
+        }
+        .author-info-container{
+            display: flex;
+            flex-direction: column;
+        }
+        #one{
+            color: rgb(62, 62, 179);
+        }
+        #two{
+            color: rgb(148, 147, 147);
+        }
+        .card-tag-container{
+            font-size: 1rem;
+            border: 1px solid rgb(124, 123, 123);
+            border-radius: 2px;
+            padding: 0.25rem 0.5rem;
+        }
+    </style>
+</head>
+<body class="body-container">
+    <div class="container">
+        <header class="header-container">
+            <h1 class="header-title">Manoj Blogs</h1>
+            <p class="header-desc">Utilize this space to incorporate a captivating subheading crafted with❤️</p>
+        </header>
+
+        <main class="main-container">
+
+            <div class="card-container">
+                <a href="#" class="card-img-container">
+                    <img src="https://source.unsplash.com/random/600×400?healthy" alt="" class="card-image" loading="lazy">
+                </a>
+                <div class="card-title-container">
+                    <a href="#" class="card-title-anchor">
+                        <h2 class="card-title">Lorem, ipsum dolor.</h2>
+                    </a>
+                    <p class="card-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, assumenda.</p>
+                </div>
+                <div class="card-footer-container">
+                    <div class="author-container">
+                        <div class="author-avatar-container">
+                            <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" alt="" loading="lazy" class="author-avatar">
+
+                        </div>
+                        <div class="author-info-container">
+                            <span id="one">John Doe</span>
+                            <span id="two">Jan 26, 2024</span>
+                        </div>
+                    </div>
+                    <div class="card-tag-container">
+                        <span>Technology</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <a href="#" class="card-img-container">
+                    <img src="https://source.unsplash.com/random/600×400?healthy" alt="" class="card-image" loading="lazy">
+                </a>
+                <div class="card-title-container">
+                    <a href="#" class="card-title-anchor">
+                        <h2 class="card-title">Lorem, ipsum dolor.</h2>
+                    </a>
+                    <p class="card-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, assumenda.</p>
+                </div>
+                <div class="card-footer-container">
+                    <div class="author-container">
+                        <div class="author-avatar-container">
+                            <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" alt="" loading="lazy" class="author-avatar">
+
+                        </div>
+                        <div class="author-info-container">
+                            <span id="one">John Doe</span>
+                            <span id="two">Jan 26, 2024</span>
+                        </div>
+                    </div>
+                    <div class="card-tag-container">
+                        <span>Technology</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <a href="#" class="card-img-container">
+                    <img src="https://source.unsplash.com/random/600×400?healthy" alt="" class="card-image" loading="lazy">
+                </a>
+                <div class="card-title-container">
+                    <a href="#" class="card-title-anchor">
+                        <h2 class="card-title">Lorem, ipsum dolor.</h2>
+                    </a>
+                    <p class="card-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, assumenda.</p>
+                </div>
+                <div class="card-footer-container">
+                    <div class="author-container">
+                        <div class="author-avatar-container">
+                            <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" alt="" loading="lazy" class="author-avatar">
+
+                        </div>
+                        <div class="author-info-container">
+                            <span id="one">John Doe</span>
+                            <span id="two">Jan 26, 2024</span>
+                        </div>
+                    </div>
+                    <div class="card-tag-container">
+                        <span>Technology</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <a href="#" class="card-img-container">
+                    <img src="https://source.unsplash.com/random/600×400?healthy" alt="" class="card-image" loading="lazy">
+                </a>
+                <div class="card-title-container">
+                    <a href="#" class="card-title-anchor">
+                        <h2 class="card-title">Lorem, ipsum dolor.</h2>
+                    </a>
+                    <p class="card-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, assumenda.</p>
+                </div>
+                <div class="card-footer-container">
+                    <div class="author-container">
+                        <div class="author-avatar-container">
+                            <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" alt="" loading="lazy" class="author-avatar">
+
+                        </div>
+                        <div class="author-info-container">
+                            <span id="one">John Doe</span>
+                            <span id="two">Jan 26, 2024</span>
+                        </div>
+                    </div>
+                    <div class="card-tag-container">
+                        <span>Technology</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <a href="#" class="card-img-container">
+                    <img src="https://source.unsplash.com/random/600×400?healthy" alt="" class="card-image" loading="lazy">
+                </a>
+                <div class="card-title-container">
+                    <a href="#" class="card-title-anchor">
+                        <h2 class="card-title">Lorem, ipsum dolor.</h2>
+                    </a>
+                    <p class="card-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, assumenda.</p>
+                </div>
+                <div class="card-footer-container">
+                    <div class="author-container">
+                        <div class="author-avatar-container">
+                            <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" alt="" loading="lazy" class="author-avatar">
+
+                        </div>
+                        <div class="author-info-container">
+                            <span id="one">John Doe</span>
+                            <span id="two">Jan 26, 2024</span>
+                        </div>
+                    </div>
+                    <div class="card-tag-container">
+                        <span>Technology</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <a href="#" class="card-img-container">
+                    <img src="https://source.unsplash.com/random/600×400?healthy" alt="" class="card-image" loading="lazy">
+                </a>
+                <div class="card-title-container">
+                    <a href="#" class="card-title-anchor">
+                        <h2 class="card-title">Lorem, ipsum dolor.</h2>
+                    </a>
+                    <p class="card-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, assumenda.</p>
+                </div>
+                <div class="card-footer-container">
+                    <div class="author-container">
+                        <div class="author-avatar-container">
+                            <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" alt="" loading="lazy" class="author-avatar">
+
+                        </div>
+                        <div class="author-info-container">
+                            <span id="one">John Doe</span>
+                            <span id="two">Jan 26, 2024</span>
+                        </div>
+                    </div>
+                    <div class="card-tag-container">
+                        <span>Technology</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <a href="#" class="card-img-container">
+                    <img src="https://source.unsplash.com/random/600×400?healthy" alt="" class="card-image" loading="lazy">
+                </a>
+                <div class="card-title-container">
+                    <a href="#" class="card-title-anchor">
+                        <h2 class="card-title">Lorem, ipsum dolor.</h2>
+                    </a>
+                    <p class="card-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, assumenda.</p>
+                </div>
+                <div class="card-footer-container">
+                    <div class="author-container">
+                        <div class="author-avatar-container">
+                            <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" alt="" loading="lazy" class="author-avatar">
+
+                        </div>
+                        <div class="author-info-container">
+                            <span id="one">John Doe</span>
+                            <span id="two">Jan 26, 2024</span>
+                        </div>
+                    </div>
+                    <div class="card-tag-container">
+                        <span>Technology</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <a href="#" class="card-img-container">
+                    <img src="https://source.unsplash.com/random/600×400?healthy" alt="" class="card-image" loading="lazy">
+                </a>
+                <div class="card-title-container">
+                    <a href="#" class="card-title-anchor">
+                        <h2 class="card-title">Lorem, ipsum dolor.</h2>
+                    </a>
+                    <p class="card-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, assumenda.</p>
+                </div>
+                <div class="card-footer-container">
+                    <div class="author-container">
+                        <div class="author-avatar-container">
+                            <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" alt="" loading="lazy" class="author-avatar">
+
+                        </div>
+                        <div class="author-info-container">
+                            <span id="one">John Doe</span>
+                            <span id="two">Jan 26, 2024</span>
+                        </div>
+                    </div>
+                    <div class="card-tag-container">
+                        <span>Technology</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
