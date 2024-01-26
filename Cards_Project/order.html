@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Card</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    min-height: 800px;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.card{
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    align-items: center;
+}
+.card img{
+    width: 100%;
+    height: 30%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.text-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 70%;
+    text-align: center;
+}
+#amount-box{
+    width: 80%;
+    height: 10%;
+    background-color: aquamarine;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+#left-box{
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+#img-box{
+    width: 4rem;
+}
+#button{
+    width: 80%;
+    height: 9%;
+    background-color: rgb(1, 1, 42);
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+#cancel a{
+    color: rgb(97, 87, 87);
+    text-decoration: none;
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="./icon.jpg" alt="">
+            <div class="text-box">
+                <h2>Order Summary</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, provident. Neque quasi ut, rem recusandae amet necessitatibus distinctio exercitationem ea.</p>
+            </div>
+            <div id="amount-box">
+                <div id="left-box">
+
+                    <div id="img-box">
+                        <img src="./music.png" alt="">
+                    </div>
+
+                    <div id="text-box">
+                        <p>Amount</p>
+                        <p>$99 /year</p>
+                    </div>
+
+                </div>
+
+                <div id="right-box">
+                    <a href="">Change</a>
+                </div>
+            </div>
+            <button id="button">
+                    Proceed to Payment
+            </button>
+            <div id="cancel">
+                <a href="">Cancel Order</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
